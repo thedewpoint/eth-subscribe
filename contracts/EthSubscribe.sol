@@ -1,7 +1,7 @@
 pragma solidity ^0.4.0;
 contract EthSubscribe {
-    address mgrAddr;
-    mapping (string=>Owner) apps;
+    address public mgrAddr;
+    mapping (string=>Owner)  apps;
     mapping (address=>uint) pendingWithdrawals;
     struct Owner{
         address ownerAddr;
@@ -46,6 +46,10 @@ contract EthSubscribe {
         uint amount = pendingWithdrawals[msg.sender];
         pendingWithdrawals[msg.sender] = 0;
         msg.sender.transfer(amount);
+    }
+    function getAppFee(string _appName) external returns(uint) {
+         if(appExists(_appName)){return apps[_appName].subFee;}
+         else return 0;
     }
 
 }

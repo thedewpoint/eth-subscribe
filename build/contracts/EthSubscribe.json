@@ -1,0 +1,27 @@
+{
+  "contract_name": "EthSubscribe",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "mgrAddr",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x60606040523415600b57fe5b5b5b5b60848061001c6000396000f300606060405263ffffffff60e060020a600035041663ed1c268281146020575bfe5b3415602757fe5b602d6049565b60408051600160a060020a039092168252519081900360200190f35b600054600160a060020a0316815600a165627a7a72305820bbe1b6d2e522348a99a150999686e503a9fa42d5d0e8fbc214e45114bb31263e0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1495073296147
+}
