@@ -1,0 +1,27 @@
+{
+  "name": "eth-subscribe",
+  "version": "0.0.1",
+  "description": "solidity contract for maintaining freemium app purchases and app subscriptions using ethereum",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedewpoint/eth-subscribe.git"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "truffle"
+  ],
+  "author": "DJ Bowden",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/thedewpoint/eth-subscribe/issues"
+  },
+  "homepage": "https://github.com/thedewpoint/eth-subscribe#readme"
+}
