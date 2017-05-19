@@ -21,7 +21,7 @@ before_install:
   - npm --version
   - gcc --version
   - g++ --version
-  - python --v
+  - python -v
 
 before_script:
   - npm install -g truffle 
