@@ -8,7 +8,6 @@ addons:
     packages:
       - gcc-4.7
       - g++-4.7
-      - git-all 
       - pkg-config 
       - libncurses5-dev 
       - libssl-dev 
