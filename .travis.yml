@@ -8,6 +8,12 @@ addons:
     packages:
       - gcc-4.7
       - g++-4.7
+      - git-all 
+      - pkg-config 
+      - libncurses5-dev 
+      - libssl-dev 
+      - libnss3-dev 
+      - libexpat-dev
 
 before_install:
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
