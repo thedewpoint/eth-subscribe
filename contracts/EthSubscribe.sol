@@ -30,10 +30,10 @@ contract EthSubscribe {
         return true;
     }
     function subscribe (string _appName) payable returns (bool){
-        if(!appExists(_appName)) {return false;}
-        Owner owner = apps[_appName];
+         Owner owner = apps[_appName];
+        if(!appExists(_appName) ) {return false;}
         owner.customers[msg.sender] = Customer(msg.sender,now,msg.value - owner.subFee);
-        stageWithdrawal(owner.ownerAddr,msg.value - owner.subFee);
+        // stageWithdrawal(owner.ownerAddr,msg.value - owner.subFee);
         return true;
     }
     function unsubscribe(string _appName) external returns (bool){
